@@ -1,0 +1,49 @@
+# --- Base model (download from HuggingFace, not stored in repo) ---
+finetune/Qwen2.5-0.5B-Instruct/
+
+# --- Intermediate training checkpoints (large optimizer states) ---
+finetune/saved_models/qwen2.5-0.5b-math-sft-checkpoint/
+
+# --- Logs ---
+finetune/logs/
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+.env
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Cache / temp ---
+*.tmp
+*.bak
+.cache/
+
+# --- HuggingFace cache ---
+.huggingface/
