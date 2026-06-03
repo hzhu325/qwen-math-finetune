@@ -1,0 +1,49 @@
+{
+  "rouge": {
+    "rouge1": 0.4132659121243863,
+    "rouge2": 0.18228768916576643,
+    "rougeL": 0.36495290375425826,
+    "rougeLsum": 0.3642504612624533
+  },
+  "bleu": 0.20362881797660376,
+  "choice_accuracy": 0.26,
+  "choice_hit": 26,
+  "choice_total": 100,
+  "samples": [
+    {
+      "prompt": "<problem>in a group of ducks and cows , the total number of legs are 26 more than twice the no . of heads . find the total no . of buffaloes .</problem><operations>a ) 11 , b ) 12 , c ) 13 , d ) 16 , e ) 18</options>",
+      "reference": "<rationale>\"let the number of buffaloes be x and the number of ducks be y = > 4 x + 2 y = 2 ( x + y ) + 26 = > 2 x = 26 = > x = 13 c\"</rationale><correct>c</correct>",
+      "prediction": "<rationale>\"let the no of ducks be x and cows be y . then , we have : 4 x + 2 y = 2 ( x + y ) + 26 4 x + 2 y = 2 x + 2 y + 26 2 x = 26 - 26 = 0 x = 0 so , no of cows is 0 . answer : a\"</rationale><correct>a</correct>",
+      "pred_choice": "a",
+      "gold_choice": "c"
+    },
+    {
+      "prompt": "<problem>how many words , with or without meaning , can be formed using all letters of the word good using each letter exactly once ?</problem><operations>a ) 18 , b ) 20 , c ) 22 , d ) 23 , e ) 24</options>",
+      "reference": "<rationale>\"the word good has exactly 4 letters which are all different . therefore the number of words that can be formed = number of permutations of 4 letters taken all at a time . = p ( 4 , 4 ) = 4 ! = 4 x 3 x 2 × 1 = 24 answer : e\"</rationale><correct>e</correct>",
+      "prediction": "<rationale>\"explanation : total no . of ways to arrange 5 letters = 5 ! = 120 answer is d\"</rationale><correct>d</correct>",
+      "pred_choice": "d",
+      "gold_choice": "e"
+    },
+    {
+      "prompt": "<problem>how many different ways can 2 students be seated in a row of 4 desks , so that there is always at least one empty desk between the students ?</problem><operations>a ) 2 , b ) 3 , c ) 4 , d ) 6 , e ) 12</options>",
+      "reference": "<rationale>\"total cases : 12 ( student one has 4 options and student two has three options , 4 x 3 = 12 ) non - favourable cases : 6 ( when two students sit together . students in desk 1 and desk 2 , in desk 2 and desk 3 , in desk 3 and desk 4 ) for each of these cases there are two possibilities because the positions can be interchanged . hence 2 x 3 = 6 . so favourable cases : 12 - 6 = 6 . answer : d\"</rationale><correct>d</correct>",
+      "prediction": "<rationale>\"explanation : total number of ways to arrange 2 students = 4 * 3 = 12 now we have to exclude the cases where all 2 students sit together . this means they occupy 2 adjacent seats . let us consider the case when student A sits on left and student B sits on right . then there are only 2 possible arrangements - AB or BA . similarly if student A sits on right and student B sits on left , then there are only 2 possible arrangements - BA or AB . hence total no of ways = 2 + 2 = 4 answer : c\"</rationale><correct>c</correct>",
+      "pred_choice": "c",
+      "gold_choice": "d"
+    },
+    {
+      "prompt": "<problem>what is the length of the diagonal of a square whose area is 4 times of another square with diagonal as 5 v 2 cm ?</problem><operations>['a ) 20 v 2', 'b ) 10', 'c ) 10 v 2', 'd ) 20', 'e ) 25']</options>",
+      "reference": "<rationale>solution : 10 v 2 area of square = 1 / 2 * ( length of diagonal ) 2 area of square 1 = * ( 5 v 2 ) 2 = 25 area of square 2 = 4 * 25 = 100 length of diagonal of square 2 = v 2 * area = v 2 * 100 = v 200 = 10 v 2 cm answer is c</rationale><correct>c</correct>",
+      "prediction": "<rationale>\"area of first square = ( 5 / 2 ) ^ 2 = 25 / 4 area of second square = 4 * 25 / 4 = 25 length of diagonal of second square = sqrt ( 25 + 25 ) = 5 v 2 answer : b\"</rationale><correct>b</correct>",
+      "pred_choice": "b",
+      "gold_choice": "c"
+    },
+    {
+      "prompt": "<problem>the sides of a square region , measured to the nearest centimeter , are 10 centimeters long . the least possible value of the actual area of the square region is</problem><operations>a ) 96.25 sq cm , b ) 98.25 sq cm , c ) 92.25 sq cm , d ) 100.25 sq cm , e ) 90.25 sq cm</options>",
+      "reference": "<rationale>\"though there might be some technicalities concerning the termnearest ( as 9.5 is equidistant from both 9 and 10 ) the answer still should be : 9.5 ^ 2 = 90.25 . answer : e\"</rationale><correct>e</correct>",
+      "prediction": "<rationale>\"let x be the side length of the square . then , x = 10 cm . so , the actual area of the square is 10 * 10 = 100 sq cm . option (d) is correct answer\"</rationale><correct>d</correct>",
+      "pred_choice": "d",
+      "gold_choice": "e"
+    }
+  ]
+}
