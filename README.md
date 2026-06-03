@@ -118,14 +118,13 @@ move the needle on reasoning rather than format.
 
 ## Acknowledgements and Development Notes
 
-This project was written with the help of AI-assisted coding. The
-design decisions — the choice to use LoRA over full fine-tuning, the
-attention + FFN target-module set, the strict label masking on system /
-user segments, the three-metric eval harness (ROUGE / BLEU / choice
-accuracy via regex on `<correct>`), and the honest framing in the report
-that the SFT only teaches output format — were mine. The code itself was
-produced through iterative prompting, manual review and integration
-testing on my side.
+I designed and led this project during my BONC internship, including the
+choice of LoRA over full fine-tuning, the attention + FFN target-module
+set, the strict label masking on system / user segments, the three-metric
+eval harness (ROUGE / BLEU / choice accuracy via regex on `<correct>`),
+and the honest framing that the SFT only teaches output format rather
+than reasoning. AI coding assistants were used during implementation;
+the design, evaluation and analysis work was mine.
 
 `finetune/TRAINING_REPORT.md` is the most honest description of what worked
 and what did not in this experiment, including the gap between the
