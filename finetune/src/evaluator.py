@@ -2,7 +2,7 @@
 评估 LoRA 微调后的模型在测试集上的表现.
 
 用法:
-    python ./src/evaluate.py \
+    python ./src/evaluator.py \
         --model_path ./Qwen2.5-0.5B-Instruct \
         --adapter_path ./saved_models/qwen2.5-0.5b-sft/ \
         --eval_dataset_path ./data/test.jsonl
